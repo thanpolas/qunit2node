@@ -1,7 +1,7 @@
 {
   "name": "qunit2node",
   "description": "QUnit adapter for nodeunit",
-  "version": "0.1.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/thanpolas/qunit2node",
   "author": {
     "name": "Thanasis Polychronakis",
