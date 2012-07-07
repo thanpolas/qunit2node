@@ -4,36 +4,18 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: '<json:package.json>',
     test: {
-      files: ['test/**/*.js']
+      files: ['test/qunit2node.test.js']
     },
-    lint: {
-      files: ['grunt.js', 'lib/**/*.js', 'test/**/*.js']
-    },
-    watch: {
-      files: '<config:lint.files>',
-      tasks: 'default'
-    },
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        boss: true,
-        eqnull: true,
-        node: true
-      },
-      globals: {
-        exports: true
+
+    concat: {
+      nodeTests: {
+        src: ['lib/qunit2node.head.js', 'test/qunit/a_qunit.test.js'],
+        dest: 'test/qunit2node.test.js'
       }
     }
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint test');
+  grunt.registerTask('default', 'concat test');
 
 };

@@ -28,9 +28,11 @@
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "nodeunit": "~0.7.4"
+    },
   "devDependencies": {
     "grunt": "~0.3.9"
   },
-  "keywords": []
+  "keywords": ["qunit", "nodeunit", "test", "testing", "unit tests"]
 }
