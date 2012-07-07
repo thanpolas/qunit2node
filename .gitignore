@@ -1,2 +1,4 @@
 test/sample.test.js
 .npmignore
+/node_modules/
+/test/sample.test.js
