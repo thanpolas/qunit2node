@@ -15,7 +15,7 @@ qunit2node provides the boolean `NODE` variable that can help you make your QUni
 
 ```javascript
 // my QUnit test file
-
+var NODE = NODE || false;
 if (NODE) {
 	var ss = {
 		ready: require('../path/to/lib/ready.js');

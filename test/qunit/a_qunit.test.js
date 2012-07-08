@@ -4,6 +4,13 @@
  */
 
 
+var NODE = NODE || false;
+
+if (NODE) {
+  // do stuff...
+}
+
+
 test('a test that doesn\'t belong to any module', function()
 {
   expect( 8 );

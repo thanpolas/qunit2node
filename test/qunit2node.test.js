@@ -352,9 +352,16 @@ adaptor.Module.prototype.doExport = function()
 };
 
 /**
- * To properly test if qunit2node works properly, we'll write an extensive
- * QUnit test.
+ * To properly test if qunit2node works as expected, we'll write a typical
+ * QUnit test with multiple module declarations
  */
+
+
+var NODE = NODE || false;
+
+if (NODE) {
+  // do stuff...
+}
 
 
 test('a test that doesn\'t belong to any module', function()
